@@ -1,0 +1,7 @@
+<h1 *ngIf="!pokemon">Loading...</h1>
+<div *ngIf="pokemon" class="pokemon-detail">
+  <button routerLink="">Back</button>
+  <div class="id">#{{ pokemon.id }}</div>
+  <img src="{{ pokemon.image }}" alt="pokemon card" />
+  <h2 class="name">{{ pokemon.name }}</h2>
+</div>
